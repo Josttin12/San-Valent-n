@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Día de San Valentín</title>
+
+    <!-- Enlace a Bootstrap CSS (utilizando la CDN de Bootstrap) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <h1 class="text-center display-4">¿Quieres ser mi San Valentín?</h1>
+        
+        <div id="video-container" class="d-none">
+            <video controls id="valentine-video" class="mx-auto d-block rounded" width="400">
+                <source src="assets/WhatsApp Video 2024-02-13 at 9.46.59 PM.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+        
+        <p id="love-message" class="text-center mt-3">Hola, ¿cómo estás, mi vida?
+            ¿Sabías que hoy es el día de San Valentín? Sí.
+            Hoy también cumplimos meses, es genial. Me siento pleno y completamente enamorado de ti. Te amo mucho.
+            Adoro todo lo que hemos construido juntos. Quiero que sigamos siendo nosotros, quiero seguir estando junto a ti, quiero decir que deseo 
+            compartir el resto de mi vida contigo.
+        </p>
+        <button class="btn btn-primary d-block mx-auto mt-3" onclick="showMessage()">Mostrar mensaje especial</button>
+    </div>
+
+    <!-- Enlace a Bootstrap JS y Popper.js (utilizando la CDN de Bootstrap) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        function showMessage() {
+            // Mostrar el contenedor del video al hacer clic en el botón
+            document.getElementById('video-container').classList.remove('d-none');
+            
+            // Cambiar el contenido del mensaje
+            document.getElementById('love-message').innerHTML = "¡Realmente Te amoo! ¡Feliz Día de San Valentín!";
+            
+            // Puedes agregar aquí cualquier lógica adicional que desees al mostrar el video
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
